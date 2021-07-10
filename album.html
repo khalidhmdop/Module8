@@ -17,6 +17,7 @@
             border: 2px solid lightsalmon;
             position: relative;
             margin: 15px;
+            overflow: hidden;
         }
         .photo-detail h3{
             background-color: black;
@@ -33,9 +34,14 @@
             top: 0;
         }
         .photo-frame:hover .photo-detail{
-            display: block;
+            /* display: block; */
             background-color: rgba(226, 211, 171, 0.349);
             
+        }
+        .photo-frame:hover .photo{
+            transform: scale(1.5);
+            transition: transform 2s ease-in;
+
         }
     </style>
 </head>
